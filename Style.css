@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+}
+#container{
+    border: 0.5rem black solid;
+    padding: 1.5rem;
+    margin: 1rem 7rem;
+    border-radius: 0.4rem;
+}
+#head{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px,1fr));
+    grid-gap: 20px; */
+    display: grid;
+    grid-template-areas: 'main main main main main main main main main main main main main right';
+    grid-gap: 20px  
+}
+#profile{
+ grid-area: main;
+}
+ #img{
+    grid-area: right;
+}
+#profile h3, p, a{
+    padding: 1rem 0 0 1rem ;
+    font-size: 1.3rem;
+}
+.line{
+    border: 2px solid black;
+    height: 2px;
+}
+
+#img img{
+    max-width: 250px;
+    max-height: 190px;
+    height: 100vh;
+    width: 100%;
+    border: 4px solid black;
+}
+#body{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px,1fr, 1fr));
+    grid-gap: 5px;
+}
+#objectives{
+    background: green;
+    padding:1rem;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+    grid-gap: 5px; */
+}
+
+/* #header_body #name{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+    grid-gap: 20px;
+} */
+
+#name{
+    padding: 1rem 0 1rem 0;
+}
+#header_body #name p, h4{
+    display: inline;
+    
+}
+#header_body #additional{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-gap: 20px;
+}
+#footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+    grid-gap: 5px;
+}
